@@ -1,0 +1,25 @@
+{
+    "name": "wvm/indexerexpress",
+    "description": "Envoyer automatiquement des articles WordPress vers https://indexer.express",
+    "type": "project",
+    "authors": [
+        {
+            "name": "mirado",
+            "email": "misie.koto@gmail.com"
+        }
+    ],
+    "repositories": [
+        { "type": "vcs", "url": "https://gitlab.com/we.to/devtools/wordpress-hook-override.git" }
+    ],
+    "autoload": {
+        "psr-4": {
+            "IndexerExpress\\": "./src/"
+        }
+    },
+    "require": {
+        "blackhatmoney/wordpress": "dev-master",
+        "guzzlehttp/guzzle": "^7.0.0",
+        "monolog/monolog": "^2.0",
+        "symfony/dotenv": "^4.3"
+    }
+}
